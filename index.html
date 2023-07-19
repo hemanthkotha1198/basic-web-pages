@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <center>
-        
-        <marquee class="marq"
-        bgcolor="Green"
-        direction="left"
-        behavior=scroll
-        loop="">
-        <h1 style="color: crimson;"><i>
-            Pig Image</i>   </h1>
-</marquee>
 
-    <div class="main-box">
-        <div class="ear1 ear">
-            <div class="inner-ear inner-ear1"></div>
+<body>
+    <center>    <div class="container">
+        <div class="heading">
+        <h1><i>**Calculator**</i></h1>
         </div>
-        <div class="ear2 ear">
-            <div class="inner-ear inner-ear2"></div>
+
+        <div class="data">
+            <label for="firstnum"></label><br>
+            <input type="number" placeholder="Enter the First Number." id="val1">
+            <br>
+            <br>
+            <label for="secondnum"></label><br>
+            <input type="number" placeholder="Enter the second Number."id="val2">
         </div>
-        <div class="face">
-            <div class="eye eye1">
-                <div class="inner-eye inner-eye1"></div>
-            </div>
-            <div class="eye eye2">
-                <div class="inner-eye"></div>
-            </div>
-            <div class="nose">
-                <div class="hole1"></div>
-                <div class="hole2"></div>
-            </div>
-        </div>
+        <br><br><br>
+            <button id="b1" onclick="add()">Addition</button>
+            <button id="b2" onclick="sub()">Subraction</button>          
+            <button id="b3" onclick="mul()">MUltiplication</button>            
+            <button id="b4" onclick="div()">Division</button>
+            <button id="b4" onclick="exp()">Exponentail</button>
+            
+
+            <p id="A1"><h3>The answer is:</h3><h2 id="A2"> </h2></p>
     </div>
 </center>
+<Script src="./script.js"></Script>
 </body>
+
 </html>
